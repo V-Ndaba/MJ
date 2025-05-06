@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter to My Star</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4e4bc; /* Cream paper-like background */
+      overflow: auto;
+    }
+    .letter-container {
+      background: #fff;
+      width: 90%;
+      max-width: 600px;
+      min-height: 700px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      opacity: 0;
+      animation: unfold 1.5s ease-in-out forwards;
+      margin: 20px;
+    }
+    .letter {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.8rem;
+      color: #2c3e50;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .signature {
+      font-size: 2rem;
+      text-align: right;
+      margin-top: 40px;
+      color: #e74c3c;
+    }
+    @keyframes unfold {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      .letter {
+        font-size: 1.4rem;
+      }
+      .letter-container {
+        padding: 20px;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-container">
+    <div class="letter">
+      Dear MJ,<br><br>
+      Let’s be real—nobody shines brighter than you, but I’m a close second, and together, we’re basically a supernova. I figured it’s time I put it in writing: you’re stuck with me, and I’m not sorry about it. You make every day a little more epic, and yeah, I’m pretty damn lucky to have you stealing my hoodies and my heart.<br><br>
+      I built this little corner of the internet just for you—because you deserve a letter that’s as bold and one-of-a-kind as you are. So here’s the deal: keep being your incredible self, and I’ll keep being the charming genius who reminds you how awesome you are. Deal?<br><br>
+      Forever your VIP,<br>
+      <span class="signature">Love SpiderMan</span>
+    </div>
+  </div>
+  <script>
+    // Basic JS to ensure smooth animation on load
+    window.onload = () => {
+      document.querySelector('.letter-container').style.opacity = '1';
+    };
+  </script>
+</body>
+</html>
